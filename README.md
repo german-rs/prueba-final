@@ -1,3 +1,7 @@
 # Prueba Final Vue
 
-npm install -D sass-embedded 
+instalación de Sass
+- **npm install -D sass-embedded** 
+
+Ejecución test end-to-end:
+- **npm run test:e2e:dev** 
