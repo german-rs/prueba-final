@@ -9,7 +9,7 @@ export default {
   computed: {
     ...mapState(['counter']),
     defaultTitle() {
-      return this.title || 'Counter';
+      return this.title || 'Contador';
     }
   },
   methods: {
@@ -24,8 +24,8 @@ export default {
     <p class="counter__number">{{ counter }}</p>
   
     <div class="counter__box">
-      <button class="counter__btn" v-on:click="increment">+1</button>
-      <button class="counter__btn" v-on:click="decrement">-1</button>
+      <button class="counter__button" v-on:click="increment">+1</button>
+      <button class="counter__button" v-on:click="decrement">-1</button>
     </div>
   </div>
 </template>
@@ -59,7 +59,7 @@ export default {
     gap: 1em;
   }
 
-  &__btn {
+  &__button {
     padding: 1em 2em;
     border: 2px solid var(--gray800);
     color: var(--gray800);
