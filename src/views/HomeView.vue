@@ -1,9 +1,14 @@
-<script setup>
-import TheWelcome from '../components/TheWelcome.vue'
+<script>
+import CounterComponent from '@/components/CounterComponent.vue';
+export default{
+  components:{
+    CounterComponent
+  }
+}
 </script>
 
 <template>
   <main>
-    <TheWelcome />
+    <CounterComponent/>
   </main>
 </template>
